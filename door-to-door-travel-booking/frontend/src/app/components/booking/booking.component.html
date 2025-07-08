@@ -1,0 +1,19 @@
+<div class="booking-container">
+    <h1>Book Your Travel</h1>
+    <form (ngSubmit)="onSubmit()" #bookingForm="ngForm">
+        <div>
+            <label for="customerInfo">Customer Information:</label>
+            <input type="text" id="customerInfo" required [(ngModel)]="booking.customerInfo" name="customerInfo">
+        </div>
+        <div>
+            <label for="flightDetails">Flight Details:</label>
+            <input type="text" id="flightDetails" required [(ngModel)]="booking.flightDetails" name="flightDetails">
+        </div>
+        <div>
+            <label for="taxiDetails">Taxi Details:</label>
+            <input type="text" id="taxiDetails" required [(ngModel)]="booking.taxiDetails" name="taxiDetails">
+        </div>
+        <button type="submit" [disabled]="!bookingForm.form.valid">Book Now</button>
+    </form>
+    <div *ngIf="message">{{ message }}</div>
+</div>
