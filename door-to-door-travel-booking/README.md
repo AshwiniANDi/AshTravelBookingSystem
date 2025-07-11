@@ -11,10 +11,10 @@ The project is organized into two main directories: `backend` and `frontend`.
 The backend service is responsible for handling all the business logic and data management related to travel bookings. It is structured as follows:
 
 - **src/main/java/com/example/travelbooking**
-  - **controller**: Contains the `BookingController` class for handling HTTP requests.
-  - **model**: Defines the `com.ash.travelbooking.model.travelbooking.Booking` class representing a travel booking entity.
-  - **repository**: Contains the `BookingRepository` interface for CRUD operations.
-  - **service**: Implements the `BookingService` class for business logic.
+  - **controller**: Contains the `TravelController` class for handling HTTP requests.
+  - **model**: Defines the `com.ash.travelbooking.model.travelbooking.FlightDto` class representing a travel booking entity.
+  - **repository**: Contains the `FlightRepository` interface for CRUD operations.
+  - **service**: Implements the `FlightService` class for business logic.
 
 - **src/main/resources**
   - **application.properties**: Configuration properties for the Spring Boot application.
@@ -24,13 +24,15 @@ The backend service is responsible for handling all the business logic and data 
 
 - **pom.xml**: Maven configuration file for managing dependencies.
 
+- Swagger definition created for this project for API http://localhost:8080/swagger-ui/index.html
+
 ### Frontend
 
 The frontend application provides the user interface for booking travel. It is structured as follows:
 
 - **src/app**
-  - **components/booking**: Contains the booking component files (HTML, TypeScript, CSS).
-  - **services**: Defines the `BookingService` for making HTTP requests to the backend.
+  - **components/flightSearch**: Contains the booking component files (HTML, TypeScript, CSS).
+  - **services**: Defines the `FlightService` for making HTTP requests to the backend.
 
 - **src/assets**: Directory for static assets.
 
@@ -59,7 +61,8 @@ The frontend application provides the user interface for booking travel. It is s
 
 1. Navigate to the `frontend` directory.
 2. Run `npm install` to install dependencies.
-3. Run `ng serve` to start the Angular application.
+3. Run `npm run build` to build the porject.
+4. Run `npm run start or ng serve` to start the Angular application.
 
 ## Usage
 
