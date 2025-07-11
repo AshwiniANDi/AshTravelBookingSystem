@@ -1,13 +1,13 @@
 # Door to Door Travel com.ash.travelbooking.model.travelbooking.Booking Frontend
 
-This project is the frontend part of the Door to Door Travel com.ash.travelbooking.model.travelbooking.Booking application, built using Angular. It allows users to book international travel, including taxi and flight bookings.
+This project is the frontend part of the Door to Door Travel com.ash.travelbooking.model.travelbooking application, built using Angular. It allows users to book international travel, including taxi and flight search and bookings.
 
 ## Project Structure
 
 - `src/`: Contains the main application code.
   - `app/`: Contains the Angular components and services.
     - `components/`: Contains the UI components.
-      - `booking/`: Contains the booking component files.
+      - `flightSeacrh and FlightDetails/`: Contains the flight search and details component files.
     - `services/`: Contains the service files for API interactions.
   - `assets/`: Contains static assets like images and stylesheets.
   - `environments/`: Contains environment-specific settings.
@@ -37,7 +37,7 @@ This project is the frontend part of the Door to Door Travel com.ash.travelbooki
 
 ## Usage
 
-- Navigate to the booking component to create a new travel booking.
+- Navigate to the booking component to create a new travel search and booking.
 - Fill in the required details for flight and taxi bookings.
 - Submit the form to save your booking.
 
